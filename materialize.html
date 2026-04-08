@@ -1,0 +1,189 @@
+atches your theme)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materialize - Oxford Food</title>
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- SMALL CUSTOM STYLES (only for matching your theme) -->
+  <style>
+    body {
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #8ecae6;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Make nav buttons equal size */
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      min-width: 130px;
+      text-align: center;
+    }
+
+    section {
+      background-color: white;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 5px;
+    }
+
+    aside {
+      background-color: #e9f5db;
+      padding: 15px;
+      margin: 20px;
+      border-left: 5px solid #8ecae6;
+    }
+
+    footer {
+      background-color: #8ecae6;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>Oxford Food (Materialize Page)</h1>
+  <p>Using Materialize to enhance the design</p>
+</header>
+
+<!-- MATERIALIZE NAVBAR -->
+<nav class="blue lighten-1">
+  <div class="nav-wrapper center-align">
+    <ul class="center">
+      <li><a class="waves-effect waves-light btn blue darken-1" href="index.html">Home</a></li>
+      <li><a class="waves-effect waves-light btn blue darken-1" href="restaurants.html">Restaurants</a></li>
+      <li><a class="waves-effect waves-light btn blue darken-1" href="cafes.html">Cafes</a></li>
+      <li><a class="waves-effect waves-light btn blue darken-3" href="materialize.html">Materialize</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- MAIN SECTION -->
+<section class="container">
+
+  <h4 class="blue-text text-darken-2">Oxford Food Highlights</h4>
+
+  <img src="images/OxfordFood.jpg" class="responsive-img z-depth-2">
+
+  <p>
+    Oxford has a wide variety of restaurants, cafés, and dessert spots that students enjoy.
+    Many locations are close to campus, making them easy to visit between classes.
+  </p>
+
+</section>
+
+<!-- MEDIA OBJECT SECTION -->
+<section class="container">
+
+  <h4 class="blue-text text-darken-2 center-align">Student Favorite Cafe</h4>
+
+  <div class="row valign-wrapper">
+
+    <div class="col s12 m4 center-align">
+      <img src="images/CafePattersonss.jpg" class="circle responsive-img" style="width:200px;">
+    </div>
+
+    <div class="col s12 m8">
+      <p>
+        Cafés are popular places for studying and relaxing. Many students visit daily
+        for coffee, snacks, and a comfortable environment.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- VIDEO SECTION -->
+<section class="container">
+
+  <h4 class="blue-text text-darken-2 center-align">Explore Oxford Food</h4>
+
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/watch?v=7gO6mrwnqTs" allowfullscreen></iframe>
+  </div>
+
+</section>
+
+<!-- MATERIALIZE CARDS -->
+<section class="container">
+
+  <h4 class="blue-text text-darken-2">Popular Spots</h4>
+
+  <div class="row">
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/bodegaResteraunt.jpg">
+        </div>
+        <div class="card-content">
+          <p>Restaurants in Oxford are known for affordability and convenience.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/CafePattersonss.jpg">
+        </div>
+        <div class="card-content">
+          <p>Cafés are perfect for studying and socializing.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/OxfordFood.jpg">
+        </div>
+        <div class="card-content">
+          <p>Oxford offers a variety of food options for everyone.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ASIDE -->
+<aside class="container">
+  <h5>Why This Page Uses Materialize</h5>
+  <p>
+    This page demonstrates responsive design, cards, buttons, and media elements
+    using Materialize while still matching the overall theme of the website.
+  </p>
+</aside>
+
+<!-- FOOTER -->
+<footer>
+  <p>Created for a Web Design Project | Best Food in Oxford</p>
+</footer>
+
+<!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
