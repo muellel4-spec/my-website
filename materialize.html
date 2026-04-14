@@ -1,4 +1,3 @@
-atches your theme)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +8,9 @@ atches your theme)
   <!-- Materialize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  <!-- SMALL CUSTOM STYLES (only for matching your theme) -->
+  <!-- Icons (for collapsible) -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <style>
     body {
       background-color: #f4f4f4;
@@ -22,7 +23,6 @@ atches your theme)
       color: white;
     }
 
-    /* Make nav buttons equal size */
     nav ul {
       display: flex;
       justify-content: center;
@@ -54,6 +54,11 @@ atches your theme)
       text-align: center;
       padding: 10px;
     }
+
+    .carousel img {
+      height: 300px;
+      object-fit: cover;
+    }
   </style>
 </head>
 
@@ -62,10 +67,10 @@ atches your theme)
 <!-- HEADER -->
 <header>
   <h1>Oxford Food (Materialize Page)</h1>
-  <p>Using Materialize to enhance the design</p>
+  <p>Using Materialize JS components</p>
 </header>
 
-<!-- MATERIALIZE NAVBAR -->
+<!-- NAVBAR -->
 <nav class="blue lighten-1">
   <div class="nav-wrapper center-align">
     <ul class="center">
@@ -77,9 +82,8 @@ atches your theme)
   </div>
 </nav>
 
-<!-- MAIN SECTION -->
+<!-- MAIN -->
 <section class="container">
-
   <h4 class="blue-text text-darken-2">Oxford Food Highlights</h4>
 
   <img src="images/OxfordFood.jpg" class="responsive-img z-depth-2">
@@ -88,16 +92,25 @@ atches your theme)
     Oxford has a wide variety of restaurants, cafés, and dessert spots that students enjoy.
     Many locations are close to campus, making them easy to visit between classes.
   </p>
-
 </section>
 
-<!-- MEDIA OBJECT SECTION -->
+<!-- CAROUSEL -->
 <section class="container">
+  <h4 class="blue-text text-darken-2 center-align">Top Food Spots</h4>
 
+  <div class="carousel">
+    <a class="carousel-item"><img src="images/OxfordFood.jpg"></a>
+    <a class="carousel-item"><img src="images/bodegaResteraunt.jpg"></a>
+    <a class="carousel-item"><img src="images/CafePattersonss.jpg"></a>
+    <a class="carousel-item"><img src="images/missing.jpg"></a>
+  </div>
+</section>
+
+<!-- MEDIA SECTION -->
+<section class="container">
   <h4 class="blue-text text-darken-2 center-align">Student Favorite Cafe</h4>
 
   <div class="row valign-wrapper">
-
     <div class="col s12 m4 center-align">
       <img src="images/CafePattersonss.jpg" class="circle responsive-img" style="width:200px;">
     </div>
@@ -108,25 +121,20 @@ atches your theme)
         for coffee, snacks, and a comfortable environment.
       </p>
     </div>
-
   </div>
-
 </section>
 
-<!-- VIDEO SECTION -->
+<!-- VIDEO -->
 <section class="container">
-
   <h4 class="blue-text text-darken-2 center-align">Explore Oxford Food</h4>
 
   <div class="video-container">
-    <iframe src="https://www.youtube.com/watch?v=7gO6mrwnqTs" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/7gO6mrwnqTs" allowfullscreen></iframe>
   </div>
-
 </section>
 
-<!-- MATERIALIZE CARDS -->
+<!-- CARDS -->
 <section class="container">
-
   <h4 class="blue-text text-darken-2">Popular Spots</h4>
 
   <div class="row">
@@ -137,7 +145,7 @@ atches your theme)
           <img src="images/bodegaResteraunt.jpg">
         </div>
         <div class="card-content">
-          <p>Restaurants in Oxford are known for affordability and convenience.</p>
+          <p>Affordable and popular restaurants near campus.</p>
         </div>
       </div>
     </div>
@@ -148,7 +156,7 @@ atches your theme)
           <img src="images/CafePattersonss.jpg">
         </div>
         <div class="card-content">
-          <p>Cafés are perfect for studying and socializing.</p>
+          <p>Perfect places for studying and relaxing.</p>
         </div>
       </div>
     </div>
@@ -159,21 +167,57 @@ atches your theme)
           <img src="images/OxfordFood.jpg">
         </div>
         <div class="card-content">
-          <p>Oxford offers a variety of food options for everyone.</p>
+          <p>A wide variety of food options for everyone.</p>
         </div>
       </div>
     </div>
 
   </div>
+</section>
 
+<!-- COLLAPSIBLE -->
+<section class="container">
+  <h4 class="blue-text text-darken-2">More About Oxford Food</h4>
+
+  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">access_time</i>
+        Best Time to Eat
+      </div>
+      <div class="collapsible-body">
+        <span>Going earlier in the evening helps avoid long wait times.</span>
+      </div>
+    </li>
+
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">favorite</i>
+        Student Favorites
+      </div>
+      <div class="collapsible-body">
+        <span>Students love cafes and affordable restaurants near campus.</span>
+      </div>
+    </li>
+
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">restaurant</i>
+        Why Oxford Food is Popular
+      </div>
+      <div class="collapsible-body">
+        <span>Many options are within walking distance.</span>
+      </div>
+    </li>
+  </ul>
 </section>
 
 <!-- ASIDE -->
 <aside class="container">
   <h5>Why This Page Uses Materialize</h5>
   <p>
-    This page demonstrates responsive design, cards, buttons, and media elements
-    using Materialize while still matching the overall theme of the website.
+    This page demonstrates responsive design and interactive features like a carousel
+    and collapsible menu using Materialize.
   </p>
 </aside>
 
@@ -182,8 +226,25 @@ atches your theme)
   <p>Created for a Web Design Project | Best Food in Oxford</p>
 </footer>
 
-<!-- Materialize JS -->
+<!-- REQUIRED JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Carousel
+  var carousels = document.querySelectorAll('.carousel');
+  M.Carousel.init(carousels, {
+    fullWidth: true,
+    indicators: true
+  });
+
+  // Collapsible
+  var collapsibles = document.querySelectorAll('.collapsible');
+  M.Collapsible.init(collapsibles);
+
+});
+</script>
 
 </body>
 </html>
