@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery Interactions</title>
+<link rel="stylesheet" href="styles.css">
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Interactive jQuery Page</h1>
+<p><b>Learning</b> how to use <i>jQuery interactions</i> on a website.</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="restaurants.html">Restaurants</a></li>
+    <li><a href="cafes.html">Cafes & Desserts</a></li>
+    <li><a href="materialize.html">Materialize</a></li>
+    <li><a href="jquery.html">jQuery</a></li>
+  </ul>
+</nav>
+
+<section>
+
+<h2>jQuery Interaction Examples</h2>
+
+<p>
+This page shows simple jQuery interactions like hiding elements, sliding boxes, and toggling dark mode. 
+These effects help make websites more interactive without writing a lot of JavaScript code.
+</p>
+
+<!-- Interaction 1 -->
+<h3>Hide / Show Box</h3>
+<button id="toggleBtn">Toggle Box</button>
+<div id="box1" style="width:150px;height:150px;background:lightgray;margin-top:10px;">
+Box 1
+</div>
+
+<!-- Interaction 2 -->
+<h3>Slide Effect</h3>
+<button id="slideBtn">Slide Box</button>
+<div id="box2" style="width:150px;height:150px;background:lightblue;margin-top:10px;">
+Box 2
+</div>
+
+<!-- Interaction 3 -->
+<h3>Dark Mode</h3>
+<button id="darkBtn">Toggle Dark Mode</button>
+
+</section>
+
+<aside>
+<h2>Why jQuery Matters</h2>
+<p>
+jQuery makes it easier to add interactive features without writing long JavaScript code. 
+It helps beginners learn how websites respond to user actions.
+</p>
+</aside>
+
+<footer>
+<p>Web Design Project | jQuery Practice Page</p>
+</footer>
+
+<!-- jQuery Script -->
+<script>
+$(document).ready(function() {
+
+  $("#toggleBtn").click(function() {
+    $("#box1").toggle();
+  });
+
+  $("#slideBtn").click(function() {
+    $("#box2").slideToggle();
+  });
+
+  $("#darkBtn").click(function() {
+    $("body").toggleClass("dark");
+  });
+
+});
+</script>
+
+</body>
+</html>
