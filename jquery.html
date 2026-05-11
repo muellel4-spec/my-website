@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery Page - Oxford Food</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+  .highlight {
+    background-color: yellow;
+  }
+
+  .box {
+    padding: 10px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 5px;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>jQuery Interaction Page</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="restaurants.html">Restaurants</a></li>
+    <li><a href="cafes.html">Cafes & Desserts</a></li>
+    <li><a href="materialize.html">Materialize</a></li>
+    <li><a href="jquery.html">jQuery</a></li>
+    <li><a href="bootstrap.html">Bootstrap</a></li>
+  </ul>
+</nav>
+
+<section>
+
+<h2>Try jQuery Features</h2>
+
+<!-- Toggle visibility -->
+<button id="toggleBtn">Show/Hide Food List</button>
+
+<div id="foodList" class="box">
+  <ul>
+    <li>Burgers</li>
+    <li>Pizza</li>
+    <li>Coffee</li>
+    <li>Ice Cream</li>
+  </ul>
+</div>
+
+<!-- Highlight effect -->
+<button id="highlightBtn">Highlight Text</button>
+
+<p id="text">
+Oxford has a lot of great food options for students to enjoy every day.
+</p>
+
+<!-- Fade effect -->
+<button id="fadeBtn">Fade Box</button>
+
+<div id="fadeBox" class="box">
+  This box will fade in and out using jQuery.
+</div>
+
+<!-- Dark mode toggle -->
+<button id="darkMode">Toggle Dark Mode</button>
+
+</section>
+
+<script>
+$(document).ready(function(){
+
+  // Show/Hide list
+  $("#toggleBtn").click(function(){
+    $("#foodList").toggle();
+  });
+
+  // Highlight text
+  $("#highlightBtn").click(function(){
+    $("#text").toggleClass("highlight");
+  });
+
+  // Fade effect
+  $("#fadeBtn").click(function(){
+    $("#fadeBox").fadeToggle(500);
+  });
+
+  // Dark mode toggle (uses your CSS .dark class)
+  $("#darkMode").click(function(){
+    $("body").toggleClass("dark");
+  });
+
+});
+</script>
+
+</body>
+</html>

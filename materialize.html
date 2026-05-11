@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materialize - Oxford Food</title>
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Icons (for collapsible) -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #8ecae6;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      min-width: 130px;
+      text-align: center;
+    }
+
+    section {
+      background-color: white;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 5px;
+    }
+
+    aside {
+      background-color: #e9f5db;
+      padding: 15px;
+      margin: 20px;
+      border-left: 5px solid #8ecae6;
+    }
+
+    footer {
+      background-color: #8ecae6;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .carousel img {
+      height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>Oxford Food (Materialize Page)</h1>
+  <p>Using Materialize JS components</p>
+</header>
+
+<!-- NAVBAR -->
+<nav class="blue lighten-1">
+  <div class="nav-wrapper center-align">
+    <ul class="center">
+      <li><a class="waves-effect waves-light btn blue darken-1" href="index.html">Home</a></li>
+      <li><a class="waves-effect waves-light btn blue darken-1" href="restaurants.html">Restaurants</a></li>
+      <li><a class="waves-effect waves-light btn blue darken-1" href="cafes.html">Cafes</a></li>
+      <li><a class="waves-effect waves-light btn blue darken-3" href="materialize.html">Materialize</a></li>
+      <li><a class="waves-effect waves-light btn blue darken-1" href="jquery.html">jQuery</a></li>
+      <li><a class="waves-effect waves-light btn blue darken-1" href="bootstrap.html">Bootstrap</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<section class="container">
+  <h4 class="blue-text text-darken-2">Oxford Food Highlights</h4>
+
+  <img src="images/OxfordFood.jpg" class="responsive-img z-depth-2">
+
+  <p>
+    Oxford has a wide variety of restaurants, cafés, and dessert spots that students enjoy.
+    Many locations are close to campus, making them easy to visit between classes.
+  </p>
+</section>
+
+<!-- CAROUSEL -->
+<section class="container">
+  <h4 class="blue-text text-darken-2 center-align">Top Food Spots</h4>
+
+  <div class="carousel">
+    <a class="carousel-item"><img src="images/OxfordFood.jpg"></a>
+    <a class="carousel-item"><img src="images/bodegaResteraunt.jpg"></a>
+    <a class="carousel-item"><img src="images/CafePattersonss.jpg"></a>
+    <a class="carousel-item"><img src="images/missing.jpg"></a>
+  </div>
+</section>
+
+<!-- MEDIA SECTION -->
+<section class="container">
+  <h4 class="blue-text text-darken-2 center-align">Student Favorite Cafe</h4>
+
+  <div class="row valign-wrapper">
+    <div class="col s12 m4 center-align">
+      <img src="images/CafePattersonss.jpg" class="circle responsive-img" style="width:200px;">
+    </div>
+
+    <div class="col s12 m8">
+      <p>
+        Cafés are popular places for studying and relaxing. Many students visit daily
+        for coffee, snacks, and a comfortable environment.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="container">
+  <h4 class="blue-text text-darken-2 center-align">Explore Oxford Food</h4>
+
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/7gO6mrwnqTs" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section class="container">
+  <h4 class="blue-text text-darken-2">Popular Spots</h4>
+
+  <div class="row">
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/bodegaResteraunt.jpg">
+        </div>
+        <div class="card-content">
+          <p>Affordable and popular restaurants near campus.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/CafePattersonss.jpg">
+        </div>
+        <div class="card-content">
+          <p>Perfect places for studying and relaxing.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/OxfordFood.jpg">
+        </div>
+        <div class="card-content">
+          <p>A wide variety of food options for everyone.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COLLAPSIBLE -->
+<section class="container">
+  <h4 class="blue-text text-darken-2">More About Oxford Food</h4>
+
+  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">access_time</i>
+        Best Time to Eat
+      </div>
+      <div class="collapsible-body">
+        <span>Going earlier in the evening helps avoid long wait times.</span>
+      </div>
+    </li>
+
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">favorite</i>
+        Student Favorites
+      </div>
+      <div class="collapsible-body">
+        <span>Students love cafes and affordable restaurants near campus.</span>
+      </div>
+    </li>
+
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">restaurant</i>
+        Why Oxford Food is Popular
+      </div>
+      <div class="collapsible-body">
+        <span>Many options are within walking distance.</span>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<!-- ASIDE -->
+<aside class="container">
+  <h5>Why This Page Uses Materialize</h5>
+  <p>
+    This page demonstrates responsive design and interactive features like a carousel
+    and collapsible menu using Materialize.
+  </p>
+</aside>
+
+<!-- FOOTER -->
+<footer>
+  <p>Created for a Web Design Project | Best Food in Oxford</p>
+</footer>
+
+<!-- REQUIRED JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Carousel
+  var carousels = document.querySelectorAll('.carousel');
+  M.Carousel.init(carousels, {
+    fullWidth: true,
+    indicators: true
+  });
+
+  // Collapsible
+  var collapsibles = document.querySelectorAll('.collapsible');
+  M.Collapsible.init(collapsibles);
+
+});
+</script>
+
+</body>
+</html>
